@@ -7,7 +7,7 @@ function App() {
 
 
   return (
-    <ColorModeContent.Provider value={colorMode}>
+    <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <div className="app">
@@ -16,7 +16,7 @@ function App() {
           </main>
         </div>
       </ThemeProvider>
-    </ColorModeContent.Provider>
+    </ColorModeContext.Provider>
   );
 }
 
